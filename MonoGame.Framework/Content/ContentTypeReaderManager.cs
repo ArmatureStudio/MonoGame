@@ -97,6 +97,7 @@ namespace Microsoft.Xna.Framework.Content
                 var hIndexBufferReader = new IndexBufferReader();
                 var hBoundingBoxReader = new BoundingBoxReader();
                 var hMatrixReader = new MatrixReader();
+                var hEffectReader = new EffectReader();
                 var hBasicEffectReader = new BasicEffectReader();
                 var hVertexBufferReader = new VertexBufferReader();
                 var hAlphaTestEffectReader = new AlphaTestEffectReader();
