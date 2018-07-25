@@ -9,4 +9,4 @@
 url=https://github.com/MrHelmut/NVorbis.git
 [submodule "Switch"]
 	path = Switch
-	url = git@github.com:ArmatureStudio/MonoGame.Switch.git
+	url = https://github.com/ArmatureStudio/MonoGame.Switch
