@@ -7,3 +7,6 @@
 [submodule "ThirdParty/NVorbis"]
 	path = ThirdParty/NVorbis
 url=https://github.com/MrHelmut/NVorbis.git
+[submodule "Switch"]
+	path = Switch
+	url = git@github.com:ArmatureStudio/MonoGame.Switch.git
