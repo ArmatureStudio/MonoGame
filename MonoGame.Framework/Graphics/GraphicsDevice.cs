@@ -1327,5 +1327,15 @@ namespace Microsoft.Xna.Framework.Graphics
         {
             return PlatformGetTitleSafeArea(x, y, width, height);
         }
+
+		public void PushMarker(string s)
+		{
+			PlatformPushMarker(s);
+		}
+
+		public void PopMarker()
+		{
+			PlatformPopMarker();
+		}
     }
 }
