@@ -175,6 +175,8 @@ namespace Microsoft.Xna.Framework.Audio
         public virtual void Stop()
         {
             PlatformStop(true);
+			// immediately return this to the pool, or the assert will trigger if enough sounds are started and then stopped in one frame
+			SoundEffectInstancePool.Add(this);
         }
 
         /// <summary>Stops playing a SoundEffectInstance, either immediately or as authored.</summary>
@@ -183,6 +185,10 @@ namespace Microsoft.Xna.Framework.Audio
         public virtual void Stop(bool immediate)
         {
             PlatformStop(immediate);
+			if (immediate)
+			{
+				SoundEffectInstancePool.Add(this);
+			}
         }
 
         /// <summary>Releases the resources held by this <see cref="Microsoft.Xna.Framework.Audio.SoundEffectInstance"/>.</summary>
